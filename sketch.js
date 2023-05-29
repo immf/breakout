@@ -210,11 +210,22 @@ if(estadojogo=="fim"){
 if(pontuacao==16){
    stroke("green");
    fill("green")
-   text("Você ganhou",57,200);  
+   text("Você ganhou",57,200);
+   textSize(20);
+   stroke("black");
+   fill("black")
+   text("Pressione espaço para reiniciar o jogo",30,300);  
+  
 }
 else{stroke("red");
 fill("red")
-text("Você perdeu",57,200);}    
+text("Você perdeu",57,200); 
+textSize(20); 
+stroke("black");
+fill("black")
+text("Pressione espaço para reiniciar o jogo",30,300);  
+}
+
   if(kb.presses("space")){
    estadojogo="inicio";
    caixa1.y=75;
